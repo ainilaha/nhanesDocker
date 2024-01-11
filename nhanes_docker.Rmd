@@ -26,3 +26,29 @@ The National Health and Nutrition Examination Survey (NHANES) @Pruim2015 is a wi
 Database URL: <https://github.com/ccb-hms/NHANES>
 
 ## References
+
+## Appendix
+
+### Summary of functions 
+Table 1: List of of the functions of phonto
+```{r,echo=FALSE}
+
+func_list = c(checkDataConsistency="Check Variable Consistency",
+          jointQuery = "Joint Query",
+          metaData= "Show meta data information",
+          nhanesColnames= "Column Names for NHANES tables",
+          nhanesDim= "Dimensions of NHANES table",
+          nhanesHead= "Return the First of an NHANES table",
+          nhanesNcol= "The Number of Columns of an NHANES table",
+          nhanesNrow= "The Number of Rows of an NHANES table",
+          nhanesQuery= "Query NHANES data from Database FIXME: More information goes here.",
+          nhanesTail= "Return the Last of an NHANES table",
+          nonPhenotypes=	"non phenotypes data",
+          phesant="simple version of PHEnome Scan ANalysis Tool (PHESANT)",
+          unionQuery= "Union Query")
+func_df = data.frame(Functions=names(func_list), 
+                     Descriptions=func_list
+                     )
+knitr::kable(func_df, "pipe",row.names = F)
+```
+
