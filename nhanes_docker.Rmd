@@ -1,0 +1,28 @@
+---
+title: "Using SQL and Docker to access NHANES"
+date: "2024-01-11"
+
+bibliography: references.bib
+output:
+  word_document: 
+    keep_md: true
+  bookdown::pdf_book:
+    citation_package: biblatex
+  html_document:
+    df_print: paged
+  pdf_document: null
+header-includes: \usepackage{multicol}
+link-citations: yes
+csl: vancouver.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Abstract:
+
+The National Health and Nutrition Examination Survey (NHANES) @Pruim2015 is a widely used and largely publicly available data set.  In our previous work, we described online access to NHANES via the `nhanesA` package (cite).  In this paper we describe our efforts to create a Docker(cite docker)  container that holds the NHANES data in a SQL database together with the R programming language @R-base , a companion R package `phonto` @phonto2023  and additional software tools to support a variety of analyses.  The container can run on very modest hardware (e.g.most laptop computers).   We believe that this resource will be valuable for education and scientific investigation and that it will help build a community of researchers that can more rapidly extend and apply epidemiological methods, thereby increasing the pace of scientific discovery while at the same time greatly improving reproducibility.
+
+Database URL: <https://github.com/ccb-hms/NHANES>
+
+## References
